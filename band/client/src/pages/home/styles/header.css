@@ -1,0 +1,93 @@
+.header{
+    height: 46px;
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    
+}
+
+.header .search-btn{
+    padding: 0 21px;
+    float: right;
+    display: flex;
+    cursor: pointer;
+
+}
+
+.header .fa.fa-search{
+    font-size: 20px;
+    color: #fff;
+    line-height: 46px;
+    
+}
+
+.nav{
+   position: relative;
+   display: flex;
+}
+
+.nav li{
+    display: block;
+    position: relative;
+}
+
+.nav > li > a{
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.nav .subnav{
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.nav li a{
+    
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 24px;
+    display: block
+}
+
+.nav .subnav a{
+    color: #000;
+    display: flex;
+    flex-direction: row;
+    padding: 0 12px;
+    line-height: 38px;
+}
+
+.nav .fa-solid{
+    display: inline-block;
+    font-size: 14px;
+    margin: 0 0 0 3px;
+}
+
+
+nav, .subnav {
+    list-style-type: none;
+}
+
+.nav li:hover .subnav{
+    display: block;
+}
+
+.nav > li:hover > a,
+.nav .subnav li:hover a{
+    color: #000;
+    background-color: #ccc; 
+}
+
+.header .search-btn:hover{
+    background-color: #f44336;
+}

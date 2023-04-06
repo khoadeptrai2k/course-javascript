@@ -1,0 +1,25 @@
+.footer{
+    padding: 64px 16px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.social-list{
+    font-size: 24px;
+}
+
+.social-list a{
+    text-decoration: none;
+    
+}
+
+.social-list a:hover, .copyright a:hover{
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.copyright{
+    margin-top: 15px;
+}
+
+.copyright a{
+    color: rgba(0, 0, 0, 0.6);
+}
