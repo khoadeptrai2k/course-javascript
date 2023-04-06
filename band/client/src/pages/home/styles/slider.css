@@ -1,0 +1,23 @@
+.slider{
+    position: relative;
+    margin-top: 46px;
+    padding-top: 50%;
+    background: url('/src/sliders/slider1.jpeg') top center / cover no-repeat;
+}
+
+.slider .text-content{
+    position: absolute;
+    bottom: 47px;
+    color: #fff;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+.slider .text-heading{
+    font-weight: 500;
+    font-size: 24px;
+}
+.slider .text-description{
+    font-size: 15px;
+    margin-top: 25px;
+}
