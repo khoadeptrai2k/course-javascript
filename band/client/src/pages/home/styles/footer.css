@@ -1,10 +1,24 @@
 .footer{
+    width: 100%;
     padding: 64px 16px;
     color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.social{
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .social-list{
+    width: 200px;
+    justify-content: space-between;
     font-size: 24px;
+    display: flex;
+
 }
 
 .social-list a{
@@ -22,4 +36,19 @@
 
 .copyright a{
     color: rgba(0, 0, 0, 0.6);
+}
+
+/* PC */
+@media(min-width: 1024px) {
+
+}
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+
+}
+
+/* Mobile */
+@media (max-width: 740) {
+ 
 }

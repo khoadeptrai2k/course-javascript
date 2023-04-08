@@ -18,7 +18,7 @@ const Body = () => {
   // }
   return (
     <div className="content">
-      <div className="content-section">
+      <div id="band" className="content-section">
         <h2 className="section-heading">THE BAND</h2>
         <p className="section-sub-heading">We love music</p>
         <p className="about-text">
@@ -54,7 +54,7 @@ const Body = () => {
       </div>
 
       {/* Tour section */}
-      <div className="tour-section">
+      <div id="tour" className="tour-section">
         <div className="content-section">
           <h2 className="section-heading text-white">TOUR DATES</h2>
           <p className="section-sub-heading text-white">
@@ -136,7 +136,7 @@ const Body = () => {
       </div>
 
       {/* contact section */}
-      <div className="content-section">
+      <div id="contact" className="content-section">
         <h2 className="section-heading">CONTACT</h2>
         <p className="section-sub-heading">Fan? Drop a note!</p>
 
