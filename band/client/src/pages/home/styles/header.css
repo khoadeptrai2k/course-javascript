@@ -1,25 +1,24 @@
-.header{
-    height: 46px;
-    background-color: #000;
-    display: flex;
-    justify-content: space-between;
+.header {
+    text-align: left;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
+    height: 46px;
+    background-color: #000;
     z-index: 1;
-    
+    overflow: hidden;
 }
 
+.header .mobile-menu-btn,
 .header .search-btn{
     padding: 0 21px;
     float: right;
-    display: flex;
     cursor: pointer;
 
 }
 
-.header .fa.fa-search{
+.header .search-icon, .header .menu-icon{
     font-size: 20px;
     color: #fff;
     line-height: 46px;
@@ -27,12 +26,15 @@
 }
 
 .nav{
-   position: relative;
-   display: flex;
+   display: inline-block;
 }
 
-.nav li{
-    display: block;
+.nav > li{
+    display: inline-block;
+
+}
+
+.nav li {
     position: relative;
 }
 
@@ -61,14 +63,12 @@
 
 .nav .subnav a{
     color: #000;
-    display: flex;
-    flex-direction: row;
     padding: 0 12px;
     line-height: 38px;
+    text-align: left;
 }
 
 .nav .fa-solid{
-    display: inline-block;
     font-size: 14px;
     margin: 0 0 0 3px;
 }
@@ -88,6 +88,36 @@ nav, .subnav {
     background-color: #ccc; 
 }
 
+.header .mobile-menu-btn:hover{
+    background-color: #ccc;
+}
+
+.header .mobile-menu-btn:hover .menu-icon{
+    color: #000;
+}
+
 .header .search-btn:hover{
+    cursor: pointer;
     background-color: #f44336;
+}
+
+/* PC */
+@media(min-width: 1024px) {
+
+}
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+
+}
+
+/* Mobile */
+@media (max-width: 740px) {
+    .nav > li{
+        display: block;
+    }
+
+    .header .search-btn{
+        display: none;
+    }
 }
