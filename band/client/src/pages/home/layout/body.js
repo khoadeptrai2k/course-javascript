@@ -35,17 +35,17 @@ const Body = () => {
           consequat.
         </p>
         <div className="member-list">
-          <div className="col col-third text-center">
+          <div className="member-item col col-third text-center">
             <p className="member-name">Name</p>
             <img src={memberimg} alt="Name" className="member-img" />
           </div>
 
-          <div className="col col-third text-center">
+          <div className="member-item col col-third text-center">
             <p className="member-name">Name</p>
             <img src={memberimg} alt="Name" className="member-img" />
           </div>
 
-          <div className="col col-third text-center">
+          <div className="member-item col col-third text-center">
             <p className="member-name">Name</p>
             <img src={memberimg} alt="Name" className="member-img" />
           </div>
@@ -75,7 +75,7 @@ const Body = () => {
           </ul>
           {/* Place */}
           <div className="row place-list">
-            <div className="col col-third">
+            <div className="col col-third s-col-full mt-16">
               <img className="place-img" src={newyork} alt="newyork" />
               <div className="place-body">
                 <h3 className="place-heading">New York</h3>
@@ -92,7 +92,7 @@ const Body = () => {
             </div>
 
             {
-              <div className="col col-third">
+              <div className="col col-third s-col-full mt-16">
                 <img className="place-img" src={paris} alt="paris" />
                 <div className="place-body">
                   <h3 className="place-heading">New York</h3>
@@ -109,7 +109,7 @@ const Body = () => {
               </div>
             }
 
-            <div className="col col-third">
+            <div className="col col-third s-col-full mt-16">
               <img className="place-img" src={sanfran} alt="sanfran" />
               <div className="place-body">
                 <h3 className="place-heading">New York</h3>
