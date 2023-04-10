@@ -135,7 +135,7 @@ margin: -3px;
 /* Place */
 
 .place-list{
-    margin-top: 32px;
+    margin-top: 16px;
 }
 
 .place-img{
@@ -242,6 +242,13 @@ p.info{
 }
 
 /* Mobile */
-@media (max-width: 740) {
- 
+@media (max-width: 740px) {
+    .s-col-full{
+        width: 100%;
+    }
+
+    .content .member-item{
+        width: 100%;
+        margin-top: 30px;
+    }
 }
