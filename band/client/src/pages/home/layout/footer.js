@@ -1,17 +1,16 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react'
 import "../styles/footer.css"
+import { IconsFooter } from '../untils/iconFooter'
 
 const Footer = () => {
   return (
     <div className='footer'>
       <div className='social'>
         <div className='social-list'>
-          <a><i class="fa-brands fa-square-facebook"></i></a>
-          <a><i class="fa-brands fa-instagram"></i></a>
-          <a><i class="fa-brands fa-square-snapchat"></i></a>
-          <a><i class="fa-brands fa-pinterest-p"></i></a>
-          <a><i class="fa-brands fa-twitter"></i></a>
-          <a><i class="fa-brands fa-linkedin-in"></i></a>
+          {IconsFooter.map((current_value, index) => (
+            <a key={index}><i class={`fa-brands ${current_value.nameIcons}`}></i></a>
+          ))}
         </div>
       </div>
       <p className='copyright'>Powered by <a href=''>w3.css</a></p>
