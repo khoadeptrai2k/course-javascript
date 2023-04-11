@@ -46,9 +46,34 @@
 /* Tablet */
 @media (min-width: 740px) and (max-width: 1023px) {
 
+    .social .social-list{
+        font-size: 28px;
+        justify-content: center;
+    }
+
+    .social-list a {
+        margin: 0 8px;
+    }
+
+    .footer .copyright{
+        padding: 12px 0;
+        display: inline-block;
+    }
 }
 
 /* Mobile */
-@media (max-width: 740) {
- 
+@media (max-width: 740px) {
+    .social .social-list{
+        font-size: 28px;
+        justify-content: center;
+    }
+
+    .social-list a {
+        margin: 0 8px;
+    }
+
+    .footer .copyright{
+        padding: 12px 0;
+        display: inline-block;
+    }
 }

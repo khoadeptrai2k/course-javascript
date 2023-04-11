@@ -112,7 +112,9 @@ nav, .subnav {
 
 /* Tablet */
 @media (min-width: 740px) and (max-width: 1023px) {
-
+    .nav .subnav a{
+        padding: 5px 12px;
+    }
 }
 
 /* Mobile */

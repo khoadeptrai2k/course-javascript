@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import "../styles/header.css";
-
+import {MenuOutlined} from '@ant-design/icons'
 
 const Header = () => {
 
@@ -74,7 +74,7 @@ const Header = () => {
         </div>
 
         <div id="mobile-menu" className='mobile-menu-btn' onClick={handleShowMenu}>
-            <i class="menu-icon fa-sharp fa-regular fa-bars"></i>
+            <MenuOutlined className ="menu-icon" />
             {/* <i class="menu-icon ti-menu"></i> */}
         </div>
     </div>

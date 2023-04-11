@@ -225,6 +225,15 @@ p.info{
     background-color: #ccc;
 }
 
+.contact-info a{
+    color: rgb(157, 11, 11);
+    opacity: 0.8;
+}
+
+.contact-info a:hover{
+    opacity: 1;
+}
+
 /* map section */
 
 .map-section img{
@@ -239,16 +248,58 @@ p.info{
 /* Tablet */
 @media (min-width: 740px) and (max-width: 1023px) {
 
+    .place-buy-btn, .contact-form .form-submit-btn{
+        padding: 15px 16px;
+        font-size: 16px;
+    }
+
+    .contact-form .form-control{
+        padding: 15px;
+        font-size: 16px;
+    }
+    
+    .place-buy-btn{
+        width: 100%;
+        font-size: 16px;
+    }
+    .contact-info{
+        line-height: 2;
+    }
 }
 
 /* Mobile */
 @media (max-width: 740px) {
-    .s-col-full{
+    .s-full-width, .s-col-full{
         width: 100%;
     }
 
     .content .member-item{
         width: 100%;
         margin-top: 30px;
+    }
+
+    .contact-form{
+        margin-top: 32px;
+    }
+
+    .contact-form .form-control{
+        /* padding: 15px; */
+        font-size: 16px;
+    }
+
+    .contact-info{
+        line-height: 2;
+    }
+
+    .input-mobile{
+        margin-top: 8px;
+    }
+
+    .contact-form .form-submit-btn{
+        font-size: 16px;
+        padding: 15px 16px;
+    }
+    .place-buy-btn{
+        font-size: 16px;
     }
 }
