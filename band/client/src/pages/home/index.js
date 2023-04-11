@@ -8,7 +8,6 @@ import TicketsModal from "./layout/ticketsModal";
 const Home = () => {
   return (
     <div>
-      <h1>test-branch</h1>
       <Header />
 
       <Slider />

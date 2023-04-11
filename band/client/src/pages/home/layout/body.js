@@ -85,7 +85,7 @@ const Body = () => {
                 </p>
                 <button
                   onClick={handleOpenModal}
-                  className="place-buy-btn js-buy-tickets">
+                  className="place-buy-btn js-buy-tickets s-full-width">
                   Buy Tickets
                 </button>
               </div>
@@ -102,7 +102,7 @@ const Body = () => {
                   </p>
                   <button
                     onClick={handleOpenModal}
-                    className="place-buy-btn js-buy-tickets">
+                    className="place-buy-btn js-buy-tickets s-full-width">
                     Buy Tickets
                   </button>
                 </div>
@@ -119,7 +119,7 @@ const Body = () => {
                 </p>
                 <button
                   onClick={handleOpenModal}
-                  className="place-buy-btn js-buy-tickets">
+                  className="place-buy-btn js-buy-tickets s-full-width">
                   Buy Tickets
                 </button>
               </div>
@@ -141,21 +141,21 @@ const Body = () => {
         <p className="section-sub-heading">Fan? Drop a note!</p>
 
         <div className="row contact-content">
-          <div className="col col-haft contact-info">
+          <div className="col col-haft contact-info s-col-full">
             <p className="info">
               <i class="fa-solid fa-location-dot"></i>Chicago, US
             </p>
             <p className="info">
-              <i class="fa-solid fa-phone"></i>Phone: +00 151515
+              <i class="fa-solid fa-phone"></i>Phone: <a href="tel:+00 151515">+00 151515</a>
             </p>
             <p className="info">
-              <i class="fa-solid fa-envelope"></i>Email: mail@mail.com
+              <i class="fa-solid fa-envelope"></i>Email: <a href="mailto:mail@mail.com">mail@mail.com</a>
             </p>
           </div>
-          <div className="col col-haft contact-form">
+          <div className="col col-haft contact-form s-col-full">
             <form action="">
               <div className="row">
-                <div className="col col-haft">
+                <div className="col s-col-full col-haft">
                   <input
                     className="form-control"
                     type="text"
@@ -163,7 +163,7 @@ const Body = () => {
                     required
                   />
                 </div>
-                <div className="col col-haft">
+                <div className="col s-col-full col-haft input-mobile">
                   <input
                     className="form-control"
                     type="email"
@@ -177,7 +177,7 @@ const Body = () => {
                   <input className="form-control" type="text" placeholder="Message" required />
                 </div>
               </div>
-              <input className="form-submit-btn mt-16" type="submit" value="SEND" />
+              <input className="form-submit-btn mt-16 s-full-width" type="submit" value="SEND" />
             </form>
           </div>
         </div>
