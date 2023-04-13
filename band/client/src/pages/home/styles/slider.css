@@ -2,7 +2,7 @@
     position: relative;
     margin-top: 46px;
     padding-top: 50%;
-    background: url('/src/sliders/slider1.jpeg') top center / cover no-repeat;
+    background: url('../../../sliders/slider1.jpeg') top center / cover no-repeat;
 }
 
 .slider .text-content{
@@ -20,6 +20,7 @@
 .slider .text-description{
     font-size: 15px;
     margin-top: 25px;
+    text-shadow: 0 0 3px #000;
 }
 
 /* PC */
@@ -29,10 +30,11 @@
 
 /* Tablet */
 @media (min-width: 740px) and (max-width: 1023px) {
-
+    
 }
-
 /* Mobile */
-@media (max-width: 740) {
- 
+@media (max-width: 739px) {
+    .slider .text-content{
+        display: none;
+    }
 }

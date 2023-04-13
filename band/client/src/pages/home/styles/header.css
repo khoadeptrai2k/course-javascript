@@ -118,7 +118,7 @@ nav, .subnav {
 }
 
 /* Mobile */
-@media (max-width: 740px) {
+@media (max-width: 739px) {
     .hide {
         display: none !important;
     }

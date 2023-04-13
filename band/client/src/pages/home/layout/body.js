@@ -6,6 +6,8 @@ import paris from "../../../images/paris.jpg";
 import sanfran from "../../../images/sanfran.jpg";
 import TicketsModal from "./ticketsModal";
 import map from "../../../images/map.jpg";
+import { MemberList, TicketList } from "../untils/bodyUtils";
+import Place from "../untils/place";
 
 const Body = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -35,20 +37,12 @@ const Body = () => {
           consequat.
         </p>
         <div className="member-list">
-          <div className="member-item col col-third text-center">
-            <p className="member-name">Name</p>
-            <img src={memberimg} alt="Name" className="member-img" />
-          </div>
-
-          <div className="member-item col col-third text-center">
-            <p className="member-name">Name</p>
-            <img src={memberimg} alt="Name" className="member-img" />
-          </div>
-
-          <div className="member-item col col-third text-center">
-            <p className="member-name">Name</p>
-            <img src={memberimg} alt="Name" className="member-img" />
-          </div>
+          {MemberList.map((current_value, index) => (
+            <div className="member-item col col-third text-center" key={index}>
+              <p className="member-name">{current_value.name}</p>
+              <img src={current_value.img} alt="Name" className="member-img" />
+            </div>
+          ))}
           <div className="clear"></div>
         </div>
       </div>
@@ -63,67 +57,18 @@ const Body = () => {
 
           {/* Tickets */}
           <ul className="tickets-list">
-            <li>
-              September <span className="sold-out">Sold out</span>
-            </li>
-            <li>
-              October <span className="sold-out">Sold out</span>
-            </li>
-            <li>
-              November <span className="quantity">3</span>
-            </li>
+            {TicketList.map((current_value, index) => (
+              <li key={index}>
+                {current_value.month}{" "}
+                <span className={current_value.className}>
+                  {current_value.status}
+                </span>
+              </li>
+            ))}
           </ul>
           {/* Place */}
           <div className="row place-list">
-            <div className="col col-third s-col-full mt-16">
-              <img className="place-img" src={newyork} alt="newyork" />
-              <div className="place-body">
-                <h3 className="place-heading">New York</h3>
-                <p className="place-time">Fri 27 Nov 2016</p>
-                <p className="place-desc">
-                  Praesent tincidunt sed tellus ut rutrum sed vitae justo.
-                </p>
-                <button
-                  onClick={handleOpenModal}
-                  className="place-buy-btn js-buy-tickets s-full-width">
-                  Buy Tickets
-                </button>
-              </div>
-            </div>
-
-            {
-              <div className="col col-third s-col-full mt-16">
-                <img className="place-img" src={paris} alt="paris" />
-                <div className="place-body">
-                  <h3 className="place-heading">New York</h3>
-                  <p className="place-time">Sat 28 Nov 2016</p>
-                  <p className="place-desc">
-                    Praesent tincidunt sed tellus ut rutrum sed vitae justo.
-                  </p>
-                  <button
-                    onClick={handleOpenModal}
-                    className="place-buy-btn js-buy-tickets s-full-width">
-                    Buy Tickets
-                  </button>
-                </div>
-              </div>
-            }
-
-            <div className="col col-third s-col-full mt-16">
-              <img className="place-img" src={sanfran} alt="sanfran" />
-              <div className="place-body">
-                <h3 className="place-heading">New York</h3>
-                <p className="place-time">Sun 29 Nov 2016</p>
-                <p className="place-desc">
-                  Praesent tincidunt sed tellus ut rutrum sed vitae justo.
-                </p>
-                <button
-                  onClick={handleOpenModal}
-                  className="place-buy-btn js-buy-tickets s-full-width">
-                  Buy Tickets
-                </button>
-              </div>
-            </div>
+            <Place handleOpenModal={handleOpenModal}/>
             <TicketsModal
               isOpen={isModalOpen}
               onClose={() => {
@@ -146,10 +91,12 @@ const Body = () => {
               <i class="fa-solid fa-location-dot"></i>Chicago, US
             </p>
             <p className="info">
-              <i class="fa-solid fa-phone"></i>Phone: <a href="tel:+00 151515">+00 151515</a>
+              <i class="fa-solid fa-phone"></i>Phone:{" "}
+              <a href="tel:+00 151515">+00 151515</a>
             </p>
             <p className="info">
-              <i class="fa-solid fa-envelope"></i>Email: <a href="mailto:mail@mail.com">mail@mail.com</a>
+              <i class="fa-solid fa-envelope"></i>Email:{" "}
+              <a href="mailto:mail@mail.com">mail@mail.com</a>
             </p>
           </div>
           <div className="col col-haft contact-form s-col-full">
@@ -174,19 +121,27 @@ const Body = () => {
               </div>
               <div className="row mt-8">
                 <div className="col col-full">
-                  <input className="form-control" type="text" placeholder="Message" required />
+                  <input
+                    className="form-control"
+                    type="text"
+                    placeholder="Message"
+                    required
+                  />
                 </div>
               </div>
-              <input className="form-submit-btn mt-16 s-full-width" type="submit" value="SEND" />
+              <input
+                className="form-submit-btn mt-16 s-full-width"
+                type="submit"
+                value="SEND"
+              />
             </form>
           </div>
         </div>
       </div>
       {/* Map */}
       <div className="map-section">
-        <img src={map} alt="map"/>
+        <img src={map} alt="map" />
       </div>
-      
     </div>
   );
 };
